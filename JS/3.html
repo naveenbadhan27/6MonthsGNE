@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+        <input type="text" id="name">
+        <input type="text" id="name2">
+        <button onclick="abc()">Click</button>
+        <button onclick="bcd()">Click2</button>
+        <p id="pr">Hello</p>
+        <p id="prt"></p>
+        <script>
+
+            var a = ['Naveen','Jaspreet','Ravi','Raju'];
+
+            function bcd(){
+                var x = parseInt(document.getElementById('name').value);
+                // document.getElementById('prt').innerHTML = a[x];
+                for(var i = 0; i < x; i++){
+                    document.write("My name is "+a[i]+".<br>");
+                }
+
+            }
+
+            function abc(){
+                var cl = document.getElementById('name').value;
+                var cll = document.getElementById('name2').value;
+                document.getElementById('pr').style.color = cl;
+                document.getElementById('pr').style.backgroundColor = cll;
+                document.getElementById('name').focus();
+            }
+            document.write(a);
+            document.write(a[1]+a[3]+"<br>");
+            console.log(a.length);
+
+            for(var i = 0; i < a.length; i++){
+                document.write("My name is "+a[i]+".<br>");
+            }
+
+
+
+
+        </script>
+    </body>
+</html>
