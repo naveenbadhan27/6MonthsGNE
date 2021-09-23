@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	var ar = ["Naveen","Ravi","Janvi","Priya","Atul"];
+
+	document.write(ar+"<br>");
+	document.write(ar[0]+ar[3]);
+
+	document.write(ar.length+"<br>");
+
+
+	for (var i = 0; i < ar.length; i++) {
+		document.write("My name is "+ar[i]+".<br>")
+	}
+
+	var arr = [["red","maroon"],["pink","hotpink"],["yellow","blue"],["green","cyan"]];
+
+	document.write(arr+"<br>");
+	document.write(arr[0][0]);
+
+	
+
+
+</script>
+
+<br><br>
+
+
+<button onclick="abc()">Click</button>
+
+<button ondblclick="abc()">Click</button>
+
+
+<input type="text" id="name" onkeyup="bcd()" placeholder="Name">
+
+<p id="print"></p>
+
+<select id="city" onchange="pqr()">
+	<option value="">Choose City</option>
+	<option value="Ludhiana">Ldh</option>
+	<option>Chd</option>
+	<option>Amr</option>
+</select>
+
+<p id="print2"></p>
+
+<script type="text/javascript">
+
+	function abc(){
+		alert('hi');
+	}
+
+	function bcd(){
+		var a = document.getElementById('name').value;
+		document.getElementById('print').innerHTML = a;
+	}
+
+	function pqr(){
+		var b = document.getElementById('city').value;
+		document.getElementById('print2').innerHTML = b;
+	}
+
+
+</script>
+
+
+<input type="text" id="inp1" onkeyup="txt()" placeholder="Input 1">
+<input type="text" id="inp2" onkeyup="bg()" placeholder="Input 2">
+
+<p id="pr">Hello</p>
+
+<script type="text/javascript">
+	
+
+function txt(){
+	var c  = document.getElementById('inp1').value;
+	document.getElementById('pr').style.color = c;
+}
+
+function bg(){
+	var c  = document.getElementById('inp2').value;
+	document.getElementById('pr').style.backgroundColor = c;
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>
