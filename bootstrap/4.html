@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<div class="navbar-brand">Logo</div>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact</a></li>
+			<li><a href="">Gallery</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact</a></li>
+			<li><a href="">Gallery</a></li>
+		</ul>
+	</div>
+</nav>
+
+
+
+
+<div class="carousel slide" id="mycaro" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li class="active" data-slide-to="0" data-target="#mycaro"></li>
+		<li data-slide-to="1" data-target="#mycaro"></li>
+		<li data-slide-to="2" data-target="#mycaro"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="sl1.jpg" class="img-responsive">
+		</div>
+		<div class="item">
+			<img src="sl1.jpg" class="img-responsive">
+		</div>
+		<div class="item">
+			<img src="sl1.jpg" class="img-responsive">
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="col-lg-4">
+	<form>
+		<div class="form-group">
+			<label>Name</label>
+			<input type="text" name="" class="form-control">
+		</div>
+		<div class="form-group">
+			<label>Name</label>
+			<select class="form-control">
+				<option>Ldh</option>
+				<option>Chd</option>
+				<option>Pgw</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label>Address</label>
+			<textarea rows="5" class="form-control"></textarea>
+		</div>
+		<div class="form-group">
+			<input type="submit" class="btn btn-info" name="">
+		</div>
+	</form>
+</div>
+
+
+<div class="col-lg-8">
+	
+<!-- 
+	data-toggle
+	data-target
+	data-dismiss
+ -->
+
+
+<div class="dropdown">
+	<button class="btn btn-info" data-toggle='dropdown'>Dropdown</button>
+	<ul class="dropdown-menu">
+		<li><a href="">Home</a></li>
+		<li><a href="">About</a></li>
+		<li><a href="">Contact</a></li>
+		<li><a href="">Gallery</a></li>
+	</ul>
+</div>
+
+
+
+<button class="btn btn-success" data-toggle="collapse" data-target="#mycol">Collapse</button>
+
+<div class="collapse well" id="mycol">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+
+
+<button class="btn btn-danger" data-toggle="modal" data-target="#mymod">Modal</button>
+
+
+<div class="modal fade" id="mymod" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button data-dismiss="modal" class="close">x</button>
+			</div>
+			<div class="modal-body">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+			<div class="modal-footer">
+				<button data-dismiss="modal" class="btn btn-danger">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

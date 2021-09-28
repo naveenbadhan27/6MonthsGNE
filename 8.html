@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.ab{
+			height: 300px;
+			width: 300px;
+			background: indianred;
+		}
+		.ac{
+			height: 100px;
+			width: 100px;
+			background: rebeccapurple;
+			/*display: none;*/
+			animation: gif 4s linear infinite;
+		}
+
+		@keyframes gif{
+			25%{
+				background: indianred;
+			}
+			50%{
+				background: royalblue;
+			}
+			75%{
+				background: limegreen;
+			}
+			100%{
+				background: rebeccapurple;
+			}
+		}
+
+
+
+
+
+
+
+		.ab:hover .ac{
+			display: block;
+		}
+		.lst1 li{
+			display: inline;
+			padding: 10px 15px;
+		}
+		.cm{
+			height: 100px;
+			width: 100px;
+			background: darkgreen;
+			overflow: hidden;/* scroll */
+		}
+
+	</style>
+</head>
+<body>
+
+	<ul class="lst1">
+		<li><a href="">Home</a></li>
+		<li><a href="">About</a></li>
+		<li><a href="">Contact</a></li>
+		<li><a href="">Gallery</a></li>
+	</ul>
+
+	<div class="cm">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+
+
+
+
+	<div class="ab">
+		<div class="ac">
+		</div>
+	</div>
+
+
+
+
+
+</body>
+</html>
