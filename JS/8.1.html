@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	console.log('hi');
+
+	var date = new Date();
+
+	console.log(date);
+
+	console.log(date.getDate());
+	console.log(date.getMonth());
+	console.log(date.getFullYear());
+
+	console.log(date.getHours());
+	console.log(date.getMinutes());
+	console.log(date.getSeconds());
+
+	console.log(date.getDay());
+
+
+	console.log(date.getDate()+'-'+(date.getMonth()+1)+'-'+date.getFullYear());
+
+
+
+
+
+
+	
+
+	var ar = ['Naveen','Ravi','Raju','Pinky'];
+
+	var ad = [10,15,25,30];
+
+	document.write(ar);
+
+	document.write("<br>");
+
+	document.write(ar[0]);
+
+	document.write(ar.length);
+
+	for (var i = 0; i < ar.length; i++) {
+		document.write("<br>My name is "+ar[i]+".");
+	}
+
+	document.write("<br>");
+
+	var arr = [["Hello","Hi"],["Naveen","Ravi"],["Thanks","By"]];
+
+	document.write(arr[0][1]);
+	document.write(arr[1][0]);
+	document.write(arr[2][0]);
+
+
+</script>
+
+<br><br>
+
+
+<button onclick="abc()">Click</button>
+
+<button ondblclick="abc()">Click</button>
+
+
+<input type="text" id="name" placeholder="Name" onkeyup="bcd()">
+
+<p id="print"></p>
+
+<input type="text" id="color" placeholder="Name" onkeyup="def()">
+
+<select id="city" onchange="lmn()">
+	<option>Ludhiana</option>
+	<option>Phagwara</option>
+	<option>Amritsar</option>
+</select>
+
+<span id="print2"></span>
+
+<script type="text/javascript">
+	
+	function abc(){
+		alert('hi');
+	}
+
+	// abc();
+
+	function bcd(){
+		var a = document.getElementById('name').value;
+		document.getElementById('print').innerHTML = a;
+	}
+
+	function def(){
+		var a = document.getElementById('color').value;
+		document.getElementById('print').style.color = a;
+	}
+
+	function lmn(){
+		var a = document.getElementById('city').value;
+		document.getElementById('print2').innerHTML = a;
+	}
+
+
+
+</script>
+<!-- 
+background-color
+
+border-radius
+
+
+
+backgroundColor
+
+borderRadius
+ -->
+
+
+
+
+</body>
+</html>
